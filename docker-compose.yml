@@ -1,0 +1,10 @@
+services:
+  atlas-ui:
+    build: .
+    container_name: dinov3-atlas
+    restart: unless-stopped 
+    ports:
+      - "8080:80" 
+    volumes:
+      - ~/projects/unsupervised-concept-discovery/atlas_web/data:/usr/share/nginx/html/data:ro
+      - ~/projects/unsupervised-concept-discovery/atlas_web/images:/usr/share/nginx/html/images:ro

@@ -1,0 +1,12 @@
+node_modules
+.git
+dist
+build
+Dockerfile
+.dockerignore
+
+# Ignore your massive data folders during the image build!
+# We will mount these dynamically at runtime instead.
+public/data/*
+public/images/*
+!public/data/global_index.json # (Optional) keep the index if it's small
