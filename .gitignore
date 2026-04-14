@@ -25,4 +25,4 @@ dist-ssr
 
 public/data/*
 public/images/*
-!public/data/global_index.json
+#!public/data/global_index.json
